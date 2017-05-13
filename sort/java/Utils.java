@@ -13,6 +13,14 @@ public class Utils {
         System.out.println();
     }
 
+    public static void print(String log, int[] elements, int start, int end) {
+        System.out.print(log);
+        while (start <= end) {
+            System.out.print(elements[start++] + " ");
+        }
+        System.out.println();
+    }
+
     public static void swap(int[] array, int i, int j) {
         int tmp = array[i];
         array[i] = array[j];
