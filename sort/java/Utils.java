@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Random;
 
 /**
@@ -31,6 +32,12 @@ public class Utils {
         Random rnd = new Random();
         for (int i = elements.length; i > 1; i--) {
             swap(elements, i - 1, rnd.nextInt(i));
+        }
+    }
+
+    public static void assertEquals(Object expected, Object result) {
+        if (!Objects.equals(expected, result)) {
+            throw new IllegalStateException(String.format("expected is [%s], actually result is [%s]", expected, result));
         }
     }
 }

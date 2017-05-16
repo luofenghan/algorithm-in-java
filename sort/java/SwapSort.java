@@ -70,6 +70,7 @@ public class SwapSort {
                 quickSort(array, pivot + 1, high);
             }
         }
+
         private static void quickSortImprove(int[] array, int low, int high, int k) {
             if (high - low > k) {
                 int pivot = partition(array, low, high);

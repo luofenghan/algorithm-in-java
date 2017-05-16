@@ -4,13 +4,24 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.lfh.datastructure</groupId>
-    <artifactId>datastructure</artifactId>
+    <groupId>com.lfh.algorithm</groupId>
+    <artifactId>algorithm</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>sort</module>
+        <module>sort</module><!--排序-->
+        <module>string</module><!--字符串-->
+        <module>list</module><!--链表-->
+        <module>find</module><!--查找-->
+        <module>bit</module> <!--位运算-->
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>

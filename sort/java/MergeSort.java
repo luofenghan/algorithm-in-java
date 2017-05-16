@@ -1,3 +1,4 @@
+
 /**
  * Created by cwc on 2017/5/12 0012.
  */
@@ -29,11 +30,7 @@ public class MergeSort {
         int numElements = rightEnd - leftStart + 1;
 
         while (leftStart <= leftEnd && rightStart <= rightEnd) {
-            if (array[leftStart] <= array[rightStart]) {
-                temp[tmpStart++] = array[leftStart++];
-            } else {
-                temp[tmpStart++] = array[rightStart++];
-            }
+            temp[tmpStart++] = array[leftStart] > array[rightStart] ? array[rightStart++] : array[leftStart++];
         }
         /*将left剩余元素复制到tmp中*/
         while (leftStart <= leftEnd) {
@@ -44,7 +41,6 @@ public class MergeSort {
         while (rightStart <= rightEnd) {
             temp[tmpStart++] = array[rightStart++];
         }
-
 
         for (int i = 0; i < numElements; i++, rightEnd--) {
             array[rightEnd] = temp[rightEnd];
