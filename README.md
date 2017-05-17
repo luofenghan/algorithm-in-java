@@ -11,16 +11,23 @@
 ## 字符串（string）
 1. [x] [替换空格](./string/java/ReplaceBlank.java)
 
+## 队列（queue）
+1. [x] [用两个栈实现队列](./queue/java/QueueWithTwoStacks.java)
+
 ## 链表（list）
 1. [x] [逆序打印链表](./list/java/ReverseListNode.java)
 
 ## 查找（find）
 1. [x] [查找最大子数组](./find/java/FindMaximumSubArray.java)
 2. [x] [二维数组中的查找](./find/java/OrderedTwoDimensionArray.java)
+3. [x] [查找旋转数组的最小数字](./find/java/MinValueOfRotateArray.java)
 
 ## 位运算（bit）
 1. [x] [海明距离](./bit/java/HammingDistance.java)
 
+## 树（tree）
+1. [x] [重建二叉树](./tree/java/ConstructBinaryTree.java)
+ 
 ## 图算法
 - [ ] 深度优先遍历
 - [ ] 广度优先遍历
@@ -50,16 +57,6 @@
 ## 其他
 - [ ] LCA与RMP问题
 
-
-## 基本思想
-1. [ ] 枚举
-2. [ ] 递归
-3. [ ] 分治
-4. [ ] 模拟
-5. [ ] 贪心
-6. [ ] 动态规划
-7. [ ] 剪枝
-8. [ ] 回溯
 
 
 

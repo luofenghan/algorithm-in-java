@@ -2,7 +2,7 @@
  * Created by cwc on 2017/5/16 0016.
  */
 public class FindMaximumSubArray {
-    private static class SubArray {
+    private class SubArray {
         int low;
         int high;
         int sum;
@@ -23,7 +23,7 @@ public class FindMaximumSubArray {
         }
     }
 
-    private static SubArray find(int[] array, int low, int mid, int high) {
+    private SubArray find(int[] array, int low, int mid, int high) {
         int maxLeftSum = 0;
         int maxLeft = 0;
         for (int i = mid, sum = 0; i >= low; i--) {
@@ -46,11 +46,11 @@ public class FindMaximumSubArray {
         return new SubArray(maxLeft, maxRight, maxLeftSum + maxRightSum);
     }
 
-    public static SubArray find(int[] array) {
+    public SubArray find(int[] array) {
         return find(array, 0, array.length - 1);
     }
 
-    private static SubArray find(int[] array, int low, int high) {
+    private SubArray find(int[] array, int low, int high) {
         if (low == high) {
             return new SubArray(low, high, array[low]);
         }
@@ -72,7 +72,8 @@ public class FindMaximumSubArray {
 
     public static void main(String[] args) {
         int[] stockChangeArray = {13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7};
-        SubArray array = FindMaximumSubArray.find(stockChangeArray);
+        FindMaximumSubArray maximumSubArray = new FindMaximumSubArray();
+        SubArray array = maximumSubArray.find(stockChangeArray);
         System.out.println(array);
     }
 }

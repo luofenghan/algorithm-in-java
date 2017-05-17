@@ -2,8 +2,8 @@ import org.junit.Assert;
 
 /**
  * @title 汉明距离
- * @difficulty easy
  * @explain 汉明距离是一个概念，它表示两个（相同长度）字对应位不同的数量。对两个字符串进行异或运算，并统计结果为1的个数，那么这个数就是汉明距离
+ * @difficulty easy
  */
 public class HammingDistance {
 

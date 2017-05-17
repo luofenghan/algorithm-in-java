@@ -11,15 +11,22 @@
     <modules>
         <module>sort</module><!--排序-->
         <module>string</module><!--字符串-->
+        <module>queue</module><!--队列-->
         <module>list</module><!--链表-->
         <module>find</module><!--查找-->
         <module>bit</module> <!--位运算-->
+        <module>tree</module>
     </modules>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.29</version>
         </dependency>
     </dependencies>
     <build>
