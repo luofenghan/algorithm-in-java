@@ -5,9 +5,9 @@ import org.junit.Assert;
  * @example 例如，当字符串为"We Are Happy".则经过替换之后的字符串为"We%20Are%20Happy"。
  * @idea
  */
-public class ReplaceBlank {
+public class ReplaceSpace {
 
-    public static String replaceSpace(StringBuffer str) {
+    public static String replace(StringBuffer str) {
         if (str == null) {
             return null;
         }
@@ -20,7 +20,7 @@ public class ReplaceBlank {
             }
         }
         if (blankCount == 0) {
-            return str.toString();
+            return string;
         }
         String replaceFrom = " ";
         String replaceTo = "%20";
@@ -40,7 +40,7 @@ public class ReplaceBlank {
 
     public static void main(String[] args) {
         StringBuffer stringBuffer = new StringBuffer("hello world");
-        String result = ReplaceBlank.replaceSpace(stringBuffer);
+        String result = ReplaceSpace.replace(stringBuffer);
         Assert.assertEquals("hello%20world", result);
     }
 }

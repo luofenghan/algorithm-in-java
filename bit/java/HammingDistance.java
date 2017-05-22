@@ -13,7 +13,7 @@ public class HammingDistance {
 
     public static int solution2(int x, int y) {
         int count = 0;
-        for (int xor = x ^ y; xor > 0; xor &= xor - 1) ++count;
+        for (int xor = x ^ y; xor != 0; xor &= (xor - 1)) ++count;
         return count;
     }
 
@@ -27,7 +27,7 @@ public class HammingDistance {
 
     public static int solution4(int x, int y) {
         int count = 0;
-        for (int xor = x ^ y; xor > 0; xor >>= 1) {
+        for (int xor = x ^ y; xor != 0; xor >>= 1) {
             if ((xor >> 1) << 1 != xor) {
                 count++;
             }
@@ -38,5 +38,6 @@ public class HammingDistance {
     public static void main(String[] args) {
         int distance = HammingDistance.solution2(1, 4);
         Assert.assertEquals(2, distance);
+
     }
 }

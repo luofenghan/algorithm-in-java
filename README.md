@@ -9,7 +9,7 @@
 7. [ ] 桶排序
 
 ## 字符串（string）
-1. [x] [替换空格](./string/java/ReplaceBlank.java)
+1. [x] [替换空格](./string/java/ReplaceSpace.java)
 
 ## 队列（queue）
 1. [x] [用两个栈实现队列](./queue/java/QueueWithTwoStacks.java)
@@ -24,10 +24,14 @@
 
 ## 位运算（bit）
 1. [x] [海明距离](./bit/java/HammingDistance.java)
+2. [x] [m的n次方](./bit/java/PowerWithUnsignedExponent.java)
 
 ## 树（tree）
 1. [x] [重建二叉树](./tree/java/ConstructBinaryTree.java)
- 
+
+## 其他（other）
+1. [x] [打印数字](./other/java/PrintToMaxOfDigit.java)
+
 ## 图算法
 - [ ] 深度优先遍历
 - [ ] 广度优先遍历
