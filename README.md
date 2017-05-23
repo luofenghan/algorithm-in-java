@@ -18,11 +18,11 @@
 
 ## 其他（other）
 ### 字符串（string）
-- [x] [替换空格](./string/java/ReplaceSpace.java)
-- [x] [打印数字](./other/java/PrintToMaxOfDigit.java)
+- [x] [替换空格](./other/string/ReplaceSpace.java)
+- [x] [打印数字](./other/string/PrintToMaxOfDigit.java)
 ### 位运算（bit）
-- [x] [海明距离](./bit/java/HammingDistance.java)
-- [x] [m的n次方](./bit/java/PowerWithUnsignedExponent.java)
+- [x] [海明距离](./other/bit/HammingDistance.java)
+- [x] [m的n次方](./other/bit/PowerWithUnsignedExponent.java)
 
 ## 排序（sort）
 1. [x] [插入（直接插入排序，二分插入排序，希尔排序）](./sort/java/InsertSort.java)
