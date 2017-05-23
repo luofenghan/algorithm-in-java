@@ -10,12 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>sort</module><!--排序-->
-        <module>string</module><!--字符串-->
-        <module>queue</module><!--队列-->
-        <module>list</module><!--链表-->
-        <module>find</module><!--查找-->
-        <module>bit</module> <!--位运算-->
+        <module>linear</module>
         <module>tree</module>
+        <module>dp</module>
         <module>other</module>
     </modules>
     <dependencies>

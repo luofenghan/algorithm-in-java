@@ -1,4 +1,3 @@
-import java.util.Objects;
 import java.util.Random;
 
 /**
@@ -10,14 +9,6 @@ public class Utils {
         System.out.print(log);
         for (int order : elements) {
             System.out.print(order + " ");
-        }
-        System.out.println();
-    }
-
-    public static void print(String log, int[] elements, int start, int end) {
-        System.out.print(log);
-        while (start <= end) {
-            System.out.print(elements[start++] + " ");
         }
         System.out.println();
     }
@@ -35,9 +26,4 @@ public class Utils {
         }
     }
 
-    public static void assertEquals(Object expected, Object result) {
-        if (!Objects.equals(expected, result)) {
-            throw new IllegalStateException(String.format("expected is [%s], actually result is [%s]", expected, result));
-        }
-    }
 }

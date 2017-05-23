@@ -61,7 +61,7 @@ public class SelectSort {
         }
 
         private static int leftChild(int i) {
-            return 2 * i + 1;
+            return i * 2 + 1;
         }
 
         private static void percolateDown(int[] a, int i, int n) {

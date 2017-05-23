@@ -1,3 +1,28 @@
+## 动态规划（dp）
+- [x] [切钢条](./dp/java/CutRod.java)
+
+## 线性结构（linear）
+### 数组（array）
+- [x] [二分搜索](./linear/array/BinarySearch.java)
+- [x] [查找最大子数组](./linear/array/FindMaximumSubArray.java)
+- [x] [最长增长子序列](./linear/array/LongestIncreasingContinuousSubsequence.java)
+- [x] [查找数组的中位数](./linear/array/MiddleNumberOfArray.java)
+- [x] [旋转数组最小值](./linear/array/MinValueOfRotateArray.java)
+- [x] [二维有序数组查找](./linear/array/OrderedTwoDimensionArray.java)
+### 哈希表（hash）
+### 链表（linked list）
+- [x] [逆序打印链表](./linear/linkedlist/ReverseListNode.java)
+### 队列（queue）
+- [x] [用两个栈实现队列](./linear/queue/QueueWithTwoStacks.java)
+
+
+## 其他（other）
+### 字符串（string）
+- [x] [替换空格](./string/java/ReplaceSpace.java)
+- [x] [打印数字](./other/java/PrintToMaxOfDigit.java)
+### 位运算（bit）
+- [x] [海明距离](./bit/java/HammingDistance.java)
+- [x] [m的n次方](./bit/java/PowerWithUnsignedExponent.java)
 
 ## 排序（sort）
 1. [x] [插入（直接插入排序，二分插入排序，希尔排序）](./sort/java/InsertSort.java)
@@ -8,58 +33,10 @@
 6. [ ] 基数排序
 7. [ ] 桶排序
 
-## 字符串（string）
-1. [x] [替换空格](./string/java/ReplaceSpace.java)
-
-## 队列（queue）
-1. [x] [用两个栈实现队列](./queue/java/QueueWithTwoStacks.java)
-
-## 链表（list）
-1. [x] [逆序打印链表](./list/java/ReverseListNode.java)
-
-## 查找（find）
-1. [x] [查找最大子数组](./find/java/FindMaximumSubArray.java)
-2. [x] [二维数组中的查找](./find/java/OrderedTwoDimensionArray.java)
-3. [x] [查找旋转数组的最小数字](./find/java/MinValueOfRotateArray.java)
-
-## 位运算（bit）
-1. [x] [海明距离](./bit/java/HammingDistance.java)
-2. [x] [m的n次方](./bit/java/PowerWithUnsignedExponent.java)
-
-## 树（tree）
+## 树结构（tree）
+### 二叉树（binary tree）
 1. [x] [重建二叉树](./tree/java/ConstructBinaryTree.java)
 
-## 其他（other）
-1. [x] [打印数字](./other/java/PrintToMaxOfDigit.java)
-
-## 图算法
-- [ ] 深度优先遍历
-- [ ] 广度优先遍历
-- [ ] 最短路径
-- [ ] 最小生成树
-- [ ] 拓扑排序
-
-## 字符串算法
-- [ ] 字符串查找
-- [ ] hash算法
-- [ ] KMP算法
-
-## 动态规划
-- [ ] 背包问题
-- [ ] 最长公共子序列
-- [ ] 最优二分检索树
-
-## 数论问题
-- [ ] 素数问题
-- [ ] 整数问题
-- [ ] 进制问题
-- [ ] 同余模运算
-
-### 排列组合
-- [ ] 排列组合算法
-
-## 其他
-- [ ] LCA与RMP问题
 
 
 
