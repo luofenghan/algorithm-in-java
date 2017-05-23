@@ -3,12 +3,13 @@
  */
 public class PrintToMaxOfDigit {
 
-    public static void print(int n) {
+    public void print(int n) {
         if (n <= 0) {
             throw new IllegalArgumentException();
         }
         int[] numbers = new int[n];
-        for (int i = 0, len = (int) (PowerWithUnsignedExponent.power(10, n) - 1); i < len; i++) {
+
+        for (int i = 0, len = (int) (Math.pow(10, n) - 1); i < len; i++) {
             carry(numbers, n - 1);
             for (int j = 0, d = -1; j < numbers.length; j++) {
                 if (numbers[j] == 0 && j == ++d) continue;
@@ -18,7 +19,7 @@ public class PrintToMaxOfDigit {
         }
     }
 
-    private static void carry(int[] numbers, int position) {
+    private void carry(int[] numbers, int position) {
         if (position == -1) {
             return;
         }
@@ -31,6 +32,7 @@ public class PrintToMaxOfDigit {
     }
 
     public static void main(String[] args) {
-        print(10);
+        PrintToMaxOfDigit print = new PrintToMaxOfDigit();
+        print.print(10);
     }
 }
