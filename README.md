@@ -9,6 +9,9 @@
 - [x] [查找数组的中位数](./linear/array/MiddleNumberOfArray.java)
 - [x] [旋转数组最小值](./linear/array/MinValueOfRotateArray.java)
 - [x] [二维有序数组查找](./linear/array/OrderedTwoDimensionArray.java)
+- [x] [合并区间](./linear/array/MergeRange.java)
+- [x] [合并排序数组](./linear/array/MergeSortedArray.java)
+
 ### 哈希表（hash）
 ### 链表（linked list）
 - [x] [逆序打印链表](./linear/linkedlist/ReverseListNode.java)
