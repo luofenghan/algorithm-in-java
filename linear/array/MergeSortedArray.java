@@ -19,7 +19,7 @@ public class MergeSortedArray {
         int i = 0, j;
         for (int lastInsert = i; i < sizeB; i++) {
             for (j = lastInsert; j < sizeA; j++) {
-                if (arrayB[i] <= arrayA[j]) {
+                if (arrayB[i] < arrayA[j]) {
                     System.arraycopy(arrayA, j, arrayA, j + 1, arrayA.length - 1 - j);
                     arrayA[j] = arrayB[i];
                     lastInsert = j;
