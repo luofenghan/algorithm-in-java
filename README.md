@@ -5,12 +5,18 @@
 ### 数组（array）
 - [x] [二分搜索](./linear/array/BinarySearch.java)
 - [x] [查找最大子数组](./linear/array/FindMaximumSubArray.java)
+- [x] [查找最小子数组](./linear/array/FindMinimumSubArray.java)
 - [x] [最长增长子序列](./linear/array/LongestIncreasingContinuousSubsequence.java)
 - [x] [查找数组的中位数](./linear/array/MiddleNumberOfArray.java)
 - [x] [旋转数组最小值](./linear/array/MinValueOfRotateArray.java)
 - [x] [二维有序数组查找](./linear/array/OrderedTwoDimensionArray.java)
 - [x] [合并区间](./linear/array/MergeRange.java)
 - [x] [合并排序数组](./linear/array/MergeSortedArray.java)
+- [x] [合并两个排序数组](./linear/array/MergeTwoSortedArrays.java)
+- [x] [移动0](./linear/array/MoveZeroes.java)
+- [x] [分割数组，奇数在前偶数在后](./linear/array/PartitionArrayByOddAndEven.java)
+- [x] [计数器](./linear/array/PlusOne.java)
+- [x] [旋转数组恢复](./linear/array/RecoverRotatedSortedArray.java)
 
 ### 哈希表（hash）
 ### 链表（linked list）

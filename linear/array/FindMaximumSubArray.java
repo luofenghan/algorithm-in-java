@@ -72,12 +72,10 @@ public class FindMaximumSubArray {
         SubArray left = find(array, low, mid);
         SubArray right = find(array, mid + 1, high);
         SubArray cross = find(array, low, mid, high);
-        if (left.sum >= right.sum && left.sum >= cross.sum)
-            return left;
-        else if (right.sum >= left.sum && right.sum >= cross.sum)
-            return right;
-        else
-            return cross;
+
+        if (left.sum >= right.sum && left.sum >= cross.sum) return left;
+        else if (right.sum >= left.sum && right.sum >= cross.sum) return right;
+        else return cross;
 
     }
 
