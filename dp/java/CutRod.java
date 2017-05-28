@@ -51,7 +51,6 @@ public class CutRod {
                 System.out.printf("price[r%d=%d],memoized[r%d=%d]\n",j,price[j - 1],i - j,memoized[i - j]);
                 profit = Math.max(profit, price[j - 1] + memoized[i - j]);
             }
-
             memoized[i] = profit;
             System.out.printf("memoized[r%d]=%d\n---\n",i,profit);
         }

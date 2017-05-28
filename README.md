@@ -17,6 +17,14 @@
 - [x] [分割数组，奇数在前偶数在后](./linear/array/PartitionArrayByOddAndEven.java)
 - [x] [计数器](./linear/array/PlusOne.java)
 - [x] [旋转数组恢复](./linear/array/RecoverRotatedSortedArray.java)
+- [x] [删除排序数组重复数字](./linear/array/RemoveDuplicatesFromSortedArray.java)
+- [x] [删除排序数组重复数字二](./linear/array/RemoveDuplicatesFromSortedArrayII.java)
+- [x] [删除元素](./linear/array/RemoveElement.java)
+- [x] [搜索插入位置](./linear/array/SearchInsertPosition.java)
+- [x] [两数之和](./linear/array/TwoSum.java)
+- [x] [判断字符串是否没有重复字符](./linear/array/UniqueCharacters.java)
+
+
 
 ### 哈希表（hash）
 ### 链表（linked list）
