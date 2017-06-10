@@ -23,6 +23,13 @@
 - [x] [搜索插入位置](./linear/array/SearchInsertPosition.java)
 - [x] [两数之和](./linear/array/TwoSum.java)
 - [x] [判断字符串是否没有重复字符](./linear/array/UniqueCharacters.java)
+- [x] [摆动数组](./linear/array/WiggleSort.java)
+- [x] [最近的三数之和](./linear/array/ThreeSumClosest.java)
+- [x] [三数之和](./linear/array/ThreeSum.java)
+- [x] [两个数组的最小数差](./linear/array/TheSmallestDifference.java)
+- [x] [颜色排序](./linear/array/SortColors.java)
+- [x] [旋转矩阵](./linear/array/SpiralMatrix.java)
+- [x] [旋转矩阵二](./linear/array/SpiralMatrixII.java)
 
 
 

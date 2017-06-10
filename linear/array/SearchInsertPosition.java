@@ -33,9 +33,9 @@ public class SearchInsertPosition {
         while (low <= high) {
             mid = (low + high) / 2;
             if (target < array[mid]) {
-                high = mid - 1;
+                low = mid - 1;
             } else if (array[mid] < target) {
-                low = mid + 1;
+                high = mid + 1;
             } else {
                 return mid;
             }
