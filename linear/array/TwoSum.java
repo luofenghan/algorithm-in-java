@@ -1,6 +1,7 @@
 import org.junit.Assert;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * @title 给一个整数数组，找到两个数使得他们的和等于一个给定的数 target。
@@ -8,65 +9,47 @@ import java.util.Arrays;
  * @example 给出 numbers = [2, 7, 11, 15], target = 9, 返回 [1, 2].
  */
 public class TwoSum {
-    private SubArray empty = new SubArray(-1, -1, 0);
 
-    private static class SubArray {
-        int start;
-        int end;
-        int sum;
+    public int[] twoSum1(int[] numbers, int target) {
+        int[] res = new int[2];
 
-        public SubArray(int start, int end, int sum) {
-            this.start = start;
-            this.end = end;
-            this.sum = sum;
+        if (numbers == null || numbers.length <= 1) {
+            return res;
         }
-    }
-
-    public int[] twoSum(int[] numbers, int target) {
-        if (numbers == null) {
-            return new int[]{0, 0};
-        }
-        SubArray array = find(numbers, target, 0, numbers.length - 1);
-        if (array.sum == target) {
-            return new int[]{array.start + 1, array.end + 1};
-        } else {
-            return new int[]{0, 0};
-        }
-
-    }
-
-    private SubArray find(int[] numbers, int target, int low, int high) {
-        if (low == high) {
-            return new SubArray(low, high, numbers[low]);
-        }
-        int mid = (low + high) / 2;
-        SubArray left = find(numbers, target, low, mid);
-        if (left.sum == target) return left;
-        SubArray right = find(numbers, target, mid + 1, high);
-        if (right.sum == target) return right;
-        SubArray cross = findFromCross(numbers, target, low, mid, high);
-        if (cross.sum == target) return cross;
-        return empty;
-    }
-
-    private SubArray findFromCross(int[] numbers, int target, int low, int mid, int high) {
-        int sum = 0;
-        for (int i = mid; i >= low; i--) {
-            sum += numbers[i];
-            if (sum == target) {
-                return new SubArray(i, mid, sum);
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < numbers.length; i++) {
+            if (map.containsKey(target - numbers[i])) {
+                res[0] = map.get(target - numbers[i]) + 1;
+                res[1] = i + 1;
+                return res;
             }
-
+            map.put(numbers[i], i);
         }
-        for (int j = mid + 1; j <= high; j++) {
-            sum += numbers[j];
-            if (sum == target) {
-                return new SubArray(mid, j, sum);
+        return res;
+    }
+
+    public int[] twoSum2(int[] numbers, int target) {
+        int[] res = new int[2];
+        if (numbers == null || numbers.length <= 1) {
+            return res;
+        }
+        Arrays.sort(numbers);
+        int l = 0;
+        int r = numbers.length - 1;
+        while (l < r) {
+            if (numbers[l] + numbers[r] == target) {
+                res[0] = numbers[l] + 1;
+                res[1] = numbers[r] + 1;
+                return res;
+            } else if (numbers[l] + numbers[r] > target) {
+                r--;
+            } else {
+                l++;
             }
         }
-        return new SubArray(low, high, sum);
-
+        return res;
     }
+
 
     public static void main(String[] args) {
         TwoSum twoSum = new TwoSum();
@@ -75,25 +58,24 @@ public class TwoSum {
 
         /*功能测试*/
         nums = new int[]{2, 7, 11, 15, 12};
-        Assert.assertTrue(Arrays.equals(new int[]{2, 3}, twoSum.twoSum(nums, 18)));
+        Assert.assertTrue(Arrays.equals(new int[]{2, 3}, twoSum.twoSum1(nums, 18)));
 
         nums = new int[]{2, 7, 11, 15, 12};
-        Assert.assertTrue(Arrays.equals(new int[]{1, 2}, twoSum.twoSum(nums, 9)));
+        Assert.assertTrue(Arrays.equals(new int[]{1, 2}, twoSum.twoSum2(nums, 9)));
 
         nums = new int[]{2, 7, 11, 15, 12};
-        Assert.assertTrue(Arrays.equals(new int[]{4, 5}, twoSum.twoSum(nums, 27)));
+        Assert.assertTrue(Arrays.equals(new int[]{4, 5}, twoSum.twoSum1(nums, 27)));
 
         nums = new int[]{1, 0, -1};
-        Assert.assertTrue(Arrays.equals(new int[]{2, 3}, twoSum.twoSum(nums, -1)));
+        Assert.assertTrue(Arrays.equals(new int[]{2, 3}, twoSum.twoSum2(nums, -1)));
 
         /*负面测试*/
         nums = new int[]{12};
-        Assert.assertTrue(Arrays.equals(new int[]{1, 1}, twoSum.twoSum(nums, 12)));
+        Assert.assertTrue(Arrays.equals(new int[]{1, 1}, twoSum.twoSum2(nums, 12)));
 
         nums = new int[]{12};
-        Assert.assertTrue(Arrays.equals(new int[]{0, 0}, twoSum.twoSum(nums, 2)));
+        Assert.assertTrue(Arrays.equals(new int[]{0, 0}, twoSum.twoSum2(nums, 2)));
 
-        nums = null;
-        Assert.assertTrue(Arrays.equals(new int[]{0, 0}, twoSum.twoSum(nums, 2)));
+        Assert.assertTrue(Arrays.equals(new int[]{0, 0}, twoSum.twoSum2(null, 2)));
     }
 }

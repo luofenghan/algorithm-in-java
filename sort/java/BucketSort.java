@@ -16,12 +16,14 @@ public class BucketSort {
     }
 
     public static void main(String[] args) {
-        int[] arrays = {9012, 19702, 39867, 68957, 83556, 102456};
+        /*int[] arrays = {9012, 19702, 39867, 68957, 83556, 102456};
 
         System.out.println("桶排序：");
         Utils.shuffle(arrays);
         Utils.print("\tbefore sort:", arrays);
         BucketSort.sort(arrays);
-        Utils.print("\t after sort:", arrays);
+        Utils.print("\t after sort:", arrays);*/
+
+        System.out.println((1 * 2 + 1) % 3);
     }
 }

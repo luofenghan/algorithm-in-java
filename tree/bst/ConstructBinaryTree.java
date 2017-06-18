@@ -8,24 +8,7 @@
  * }
  */
 public class ConstructBinaryTree {
-    public static class TreeNode {
-        int value;
-        TreeNode left;
-        TreeNode right;
 
-        TreeNode(int x) {
-            this.value = x;
-        }
-
-        @Override
-        public String toString() {
-            return "{" +
-                    "\"value\":\"" + value + "\"," +
-                    "\"left\":" + left + "," +
-                    "\"right\":" + right +
-                    "}";
-        }
-    }
 
     /**
      * @param pre 前序遍历序列
@@ -45,7 +28,7 @@ public class ConstructBinaryTree {
         }
         TreeNode root = new TreeNode(pre[preStart]);
         for (int i = inStart; i <= inEnd; i++) {
-            if (root.value == in[i]) {
+            if (root.val == in[i]) {
                 root.left = construct(pre, preStart + 1, i - inStart + preStart, in, inStart, i - 1);
                 root.right = construct(pre, i - inStart + preStart + 1, preEnd, in, i + 1, inEnd);
             }

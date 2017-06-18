@@ -3,7 +3,7 @@
  * Created by cwc on 2017/5/12 0012.
  */
 public class MergeSort {
-
+    static int counter = 0;
 
     /**
      * 递归排序
@@ -30,8 +30,13 @@ public class MergeSort {
         int numElements = rightEnd - leftStart + 1;
 
         while (leftStart <= leftEnd && rightStart <= rightEnd) {
-            temp[tmpStart++] = array[leftStart] > array[rightStart] ? array[rightStart++] : array[leftStart++];
+            if (array[leftStart] <= array[rightStart]) {
+                temp[tmpStart++] = array[leftStart++];
+            } else {
+                temp[tmpStart++] = array[rightStart++];
+            }
         }
+
         /*将left剩余元素复制到tmp中*/
         while (leftStart <= leftEnd) {
             temp[tmpStart++] = array[leftStart++];
@@ -60,7 +65,11 @@ public class MergeSort {
                 }
 
                 while (leftStart < leftEnd && rightStart < rightEnd) {
-                    tmp[tmpIndex++] = array[leftStart] > array[rightStart] ? array[rightStart++] : array[leftStart++];
+                    if (array[leftStart] <= array[rightStart]) {
+                        tmp[tmpIndex++] = array[leftStart++];
+                    } else {
+                        tmp[tmpIndex++] = array[rightStart++];
+                    }
                 }
 
                 while (leftStart < leftEnd) {
@@ -81,6 +90,7 @@ public class MergeSort {
         Utils.shuffle(array);
         Utils.print("\tbefore sort:", array);
         MergeSort.sort(array);
+        System.out.println(counter);
         Utils.print("\t after sort:", array);
 
         System.out.println("归并排序（非递归）：");

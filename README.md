@@ -30,6 +30,9 @@
 - [x] [颜色排序](./linear/array/SortColors.java)
 - [x] [旋转矩阵](./linear/array/SpiralMatrix.java)
 - [x] [旋转矩阵二](./linear/array/SpiralMatrixII.java)
+- [ ] [逆序对](./linear/array/ReversePairs.java)
+- [x] [搜索区间](./linear/array/SearchForRange.java)
+- [x] [查找旋转数组中的值](./linear/array/SearchInRotatedSortedArray.java)
 
 
 
@@ -58,8 +61,21 @@
 7. [ ] 桶排序
 
 ## 树结构（tree）
-### 二叉树（binary tree）
-1. [x] [重建二叉树](./tree/java/ConstructBinaryTree.java)
+### 二叉搜索树（bst）
+- [x] [重建二叉树](./tree/bst/ConstructBinaryTree.java)
+- [x] [二叉搜索树迭代器](./tree/bst/BSTIterator.java)
+- [x] [向二叉查找树插入节点](./tree/bst/InsertNodeInBinarySearchTree.java)
+- [x] [移除二叉查找的节点](./tree/bst/RemoveNodeInBinarySearchTree.java)
+- [x] [移除二叉查找的节点](./tree/bst/RemoveNodeInBinarySearchTree.java)
+- [x] [查找二叉查找树的节点范围](./tree/bst/RemoveNodeInBinarySearchTree.java)
+- [x] [验证二叉搜索树](./tree/bst/ValidateBinarySearchTree.java)
+
+### 堆（heap）
+- [x] [数据流中位数](./tree/heap/DataStreamMedian.java)
+- [x] [堆化](./tree/heap/Heapify.java)
+- [ ] [滑动窗口中位数](./tree/heap/SlidingWindowMedian.java)
+- [x] [合并排序链表](./tree/heap/MergeKSortedLists.java)
+- [x] [排序矩阵中的从小到大第k个数](./tree/heap/KthSmallestNumberInSortedMatrix.java)
 
 
 
